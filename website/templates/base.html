@@ -19,12 +19,12 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <button
-        class="navbar-toggle"
+        class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-targer="#navbar"
+        data-target="#navbar"
       >
-        <span class="navbar=toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar">
         <div class="navbar-nav">
@@ -35,6 +35,12 @@
         </div>
       </div>
     </nav>
+
+    <div class="container">
+    {% block content %}
+      
+    {% endblock %}
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
